@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import aboutImage from '../assets/aboutus.jpeg'; // Replace with your actual image path
+import { Link } from 'react-router-dom';
 
 const AboutSection: React.FC = () => {
   return (
@@ -12,13 +13,15 @@ const AboutSection: React.FC = () => {
         <Right>
           <SectionTitle><span>About</span> Us</SectionTitle>
           <Heading>
-            Driven by Purpose <br />
+            Driven by Precision <br />
             Defined by <span>Innovation.</span>
           </Heading>
           <Paragraph>
-            ES Ethicsecur Softec Private Limited is a forward-thinking technology firm committed to securing and scaling businesses in the digital world. We believe in creating real impact through innovation, integrity, and industry-best practices.
+            We are a forward-thinking engineering firm delivering advanced design and simulation solutions. With a focus on CAD, FEA, and CFD, we turn complex ideas into efficient, high-performance outcomes through innovation, accuracy, and technical excellence.
           </Paragraph>
-          <Button>Learn More</Button>
+          <Link to="https://rngalpha.co.uk/" target='_blank'>
+            <Button>Learn More</Button>
+          </Link>
         </Right>
       </Container>
     </Wrapper>

@@ -50,11 +50,11 @@ const HeroSection: React.FC = () => {
     <HeroWrapper>
       <Content>
         <Heading>
-          Empowering Digital Futures
-        </Heading>
+          Engineering Precision Meets Digital Innovation
+        </Heading>  
         <Divider />
         <SubText>
-          At ES Ethicsecur Softec, we blend technology and ethics to deliver world-class solutions in cybersecurity, software development, and digital transformation.
+          Merging technology with engineering precision to deliver cutting-edge solutions in design, simulation, and analysis. From CAD modeling to FEA and CFD, we empower innovation through accuracy, performance, and streamlined digital workflows.
         </SubText>
       </Content>
     </HeroWrapper>

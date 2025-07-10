@@ -2,10 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import banner from "../assets/Hive/Banner.jpg";
 import ss1 from "../assets/Hive/screenshort-1.jpg";
-import ss2 from "../assets/Hive/screenshot-3.png";
-import ss3 from "../assets/Hive/screenshot-4.png";
-import ss4 from "../assets/Hive/screenshort-2.jpg";
-import Footer from "../Components/Footer";
+import ss2 from "../assets/Hive/screenshort-2.jpg";
+import ss3 from "../assets/Hive/screenshot-3.png";
+import ss4 from "../assets/Hive/screenshot-4.png";
+import ss5 from "../assets/Hive/screenshort-5.jpg";
+import ss6 from "../assets/Hive/screenshort-6.jpg";
+import ss7 from "../assets/Hive/screenshort-7.jpg";
 import Navbar from "../Components/Navbar";
 
 const Container = styled.div``;
@@ -39,24 +41,6 @@ const BannerText = styled.h1`
   position: relative;
 `;
 
-const Botton = styled.h1`
-  top:9rem;
- padding: 0.7rem 1.5rem;
-  background-color: #ff5252;
-  color: white;
-   margin-top: 1rem;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 25px;
-  display: inline-block;
-  position: relative;
-  a{
-  color:white;
-  text-decoration:none;
-  }
-`;
-
 // 🔹 2. Intro Section
 const Intro = styled.section`
   display: flex;
@@ -65,14 +49,6 @@ const Intro = styled.section`
   align-items: center;
   gap: 2rem;
 `;
-
-// const IntroImage = styled.img`
-//   flex: 1;
-//   max-width: 500px;
-//   width: 100%;
-//   border-radius: 12px;
-//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-// `;
 
 const IntroText = styled.div`
   flex: 1;
@@ -122,55 +98,61 @@ const ScreenshotImg = styled.img`
 `;
 
 const ProjectDetails: React.FC = () => {
-    return (
-        <>
-            <Navbar />
-            <Container>
-                {/* 🔹 Banner */}
-                <Banner>
-                    <BannerOverlay>
-                        <BannerText>Empowering Business Intelligence <br/>with Hive Consultancy</BannerText>
-                        <Botton> <a href="https://www.hiveeduco.in/" target="_blank">See Site</a></Botton>
-                    </BannerOverlay>
-                </Banner>
+  return (
+    <>
+      <Navbar />
+      <Container>
+        {/* 🔹 Banner */}
+        <Banner>
+          <BannerOverlay>
+            <BannerText>Empowering Business Intelligence <br />through Innovation and Technology</BannerText>
+          </BannerOverlay>
+        </Banner>
 
-                {/* 🔹 Intro */}
-                <Intro>
-                    {/* <IntroImage src={introImage} alt="Intro" /> */}
-                    <IntroText>
-                        "Let Hive Consultancy take your business to the next level — through innovation, strategy, and reliable tech solutions."
-                    </IntroText>
-                </Intro>
+        {/* 🔹 Intro */}
+        <Intro>
+          <IntroText>
+            "Take your business to the next level — through innovation, strategy, and reliable tech solutions."
+          </IntroText>
+        </Intro>
 
-                {/* 🔹 Description */}
-                <Description>
-                   {"    "} Hive Consultancy is a professional IT consulting firm specializing in digital transformation, data analytics, and enterprise solutions. Our mission is to help businesses harness the power of technology to achieve operational excellence and scalable growth.
-With a team of experienced consultants and developers, Hive delivers tailored solutions including cloud migration, system architecture, web application development, and business intelligence reporting. Our client-centric approach ensures every solution aligns with the organization’s goals and industry standards.
-Whether you’re a startup or an established enterprise, Hive Consultancy offers the strategic support and technical execution to elevate your digital presence and infrastructure.
-                </Description>
+        {/* 🔹 Description */}
+        <Description>
+          {"    "} A professional IT consulting approach focused on digital transformation, data analytics, and enterprise-grade solutions. The goal is to help businesses harness the power of technology for operational efficiency and sustainable growth.
+          Through a team of experienced consultants and developers, solutions are tailored across areas like cloud migration, system architecture, web application development, and business intelligence reporting. A client-focused mindset ensures every solution aligns with strategic objectives and industry best practices.
+          From startups to established enterprises, this service model provides the strategic guidance and technical execution needed to elevate digital infrastructure and performance.
+        </Description>
 
-                {/* 🔹 Screenshots */}
-                <Screenshots>
-                    <ScreenshotsTitle>Project Screenshots</ScreenshotsTitle>
-                    <ScreenshotGrid>
-                        <ScreenshotCard>
-                            <ScreenshotImg src={ss1} alt="Login Page" />
-                        </ScreenshotCard>
-                        <ScreenshotCard>
-                            <ScreenshotImg src={ss2} alt="Login Page" />
-                        </ScreenshotCard>
-                        <ScreenshotCard>
-                            <ScreenshotImg src={ss3} alt="Login Page" />
-                        </ScreenshotCard>
-                        <ScreenshotCard>
-                            <ScreenshotImg src={ss4} alt="Dashboard" />
-                        </ScreenshotCard>
-                    </ScreenshotGrid>
-                </Screenshots>
-                <Footer />
-            </Container>
-        </>
-    );
+        {/* 🔹 Screenshots */}
+        <Screenshots>
+          <ScreenshotsTitle>Project Screenshots</ScreenshotsTitle>
+          <ScreenshotGrid>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss1} alt="Login Page" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss2} alt="Login Page" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss3} alt="Login Page" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss4} alt="Dashboard" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss5} alt="Dashboard" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss6} alt="Dashboard" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss7} alt="Dashboard" />
+            </ScreenshotCard>
+          </ScreenshotGrid>
+        </Screenshots>
+      </Container>
+    </>
+  );
 };
 
 export default ProjectDetails;

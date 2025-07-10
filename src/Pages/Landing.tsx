@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import AboutSection from '../Components/AboutUs';
-import Footer from '../Components/Footer';
+// import Footer from '../Components/Footer';
 import HeroSection from '../Components/Hero';
 import Navbar from '../Components/Navbar';
 import OurProject from '../Components/OurProject';
@@ -19,7 +19,7 @@ function Landing() {
       <AboutSection />
       <AtYourService />
       <OurProject />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -4,7 +4,6 @@ import banner from "../assets/Exam/banner.jpg";
 import ss1 from "../assets/Exam/screenshot-1.jpg";
 import ss2 from "../assets/Exam/screenshot-2.jpg";
 import ss3 from "../assets/Exam/screenshot-3.jpg";
-import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
 const Container = styled.div``;
@@ -161,7 +160,6 @@ const ProjectDetails: React.FC = () => {
                         </ScreenshotCard>
                     </ScreenshotGrid>
                 </Screenshots>
-                <Footer />
             </Container>
         </>
     );

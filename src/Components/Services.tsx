@@ -1,13 +1,11 @@
-// AtYourService.tsx
-
 import React from 'react';
 import styled from 'styled-components';
 import {
-  FaShieldAlt,
-  FaCode,
+  FaDraftingCompass,
+  FaCogs,
   FaCloud,
-  FaChalkboardTeacher,
-} from 'react-icons/fa'; // Updated relevant icons
+  FaMicroscope,
+} from 'react-icons/fa';
 
 const Section = styled.section`
   padding: 4rem 2rem;
@@ -60,24 +58,24 @@ const Description = styled.p`
 const AtYourService: React.FC = () => {
   const features = [
     {
-      icon: <FaShieldAlt />, // Cybersecurity
-      title: 'Cybersecurity Solutions',
-      desc: 'Risk assessment, threat detection, penetration testing, and compliance support.',
+      icon: <FaDraftingCompass />,
+      title: 'CAD Modeling',
+      desc: 'Precise 2D and 3D design models for product visualization and manufacturing.',
     },
     {
-      icon: <FaCode />, // Web/App Development
-      title: 'Web & App Development',
-      desc: 'End-to-end custom solutions for web and mobile platforms using modern tech stacks.',
+      icon: <FaMicroscope />,
+      title: 'FEA & CFD Analysis',
+      desc: 'Advanced structural and fluid simulations to validate design performance.',
     },
     {
+      icon: <FaCogs />,
+      title: 'Product Engineering',
+      desc: 'End-to-end product development from concept to functional design.',
+    },
+     {
       icon: <FaCloud />, // Digital Transformation
       title: 'Digital Transformation',
       desc: 'Helping businesses adapt through cloud migration, automation, and smart integrations.',
-    },
-    {
-      icon: <FaChalkboardTeacher />, // IT Training
-      title: 'IT Consulting & Training',
-      desc: 'Technical guidance and corporate training programs to upskill your team securely.',
     },
   ];
 

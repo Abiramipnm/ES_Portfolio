@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import logo from '../assets/LES_Logo.png';
 
 const NavbarWrapper = styled.nav`
   width: 100vw;
@@ -50,7 +49,7 @@ const Navbar: React.FC = () => {
   return (
     <NavbarWrapper>
       <Brand href="#hero">
-        <img src={logo} alt="Logo" />
+        {/* <img src={logo} alt="Logo" /> */}
       </Brand>
       <NavLinks>
         <NavLink>Portfolio</NavLink>

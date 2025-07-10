@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import banner from "../assets/024/Banner.jpg";
+import banner from "../assets/Hive/Banner.jpg";
 import ss1 from "../assets/024/screenshot-1.jpg";
 import ss2 from "../assets/024/screenshot-2.jpg";
 import ss3 from "../assets/024/screenshot-3.jpg";
 import ss4 from "../assets/024/screenshot-4.jpg";
-import Footer from "../Components/Footer";
+import ss5 from "../assets/024/screenshot-5.jpg";
+import ss6 from "../assets/024/screenshot-6.jpg";
+import ss7 from "../assets/024/screenshot-7.jpg";
+import ss8 from "../assets/024/screenshot-8.jpg";
+import ss9 from "../assets/024/screenshot-9.jpg";
+import ss10 from "../assets/024/screenshot-10.jpg";
 import Navbar from "../Components/Navbar";
 
 const Container = styled.div``;
@@ -39,24 +44,6 @@ const BannerText = styled.h1`
   position: relative;
 `;
 
-const Botton = styled.h1`
-  top:9rem;
- padding: 0.7rem 1.5rem;
-  background-color: #ff5252;
-  color: white;
-   margin-top: 1rem;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 25px;
-  display: inline-block;
-  position: relative;
-  a{
-  color:white;
-  text-decoration:none;
-  }
-`;
-
 // 🔹 2. Intro Section
 const Intro = styled.section`
   display: flex;
@@ -65,14 +52,6 @@ const Intro = styled.section`
   align-items: center;
   gap: 2rem;
 `;
-
-// const IntroImage = styled.img`
-//   flex: 1;
-//   max-width: 500px;
-//   width: 100%;
-//   border-radius: 12px;
-//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-// `;
 
 const IntroText = styled.div`
   flex: 1;
@@ -104,8 +83,8 @@ const ScreenshotsTitle = styled.h2`
 
 const ScreenshotGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 5rem;
 `;
 
 const ScreenshotCard = styled.div`
@@ -117,58 +96,74 @@ const ScreenshotCard = styled.div`
 
 const ScreenshotImg = styled.img`
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: conatin;
 `;
 
 const ProjectDetails: React.FC = () => {
-    return (
-        <>
-            <Navbar />
-            <Container>
-                {/* 🔹 Banner */}
-                <Banner>
-                    <BannerOverlay>
-                        <BannerText>024 MotorSport</BannerText>
-                        <Botton> <a href="#" target="_blank">See Site</a></Botton>
-                    </BannerOverlay>
-                </Banner>
+  return (
+    <>
+      <Navbar />
+      <Container>
+        {/* 🔹 Banner */}
+        <Banner>
+          <BannerOverlay>
+            <BannerText>Revolutionizing Transport Booking <br />with Smart, Seamless Solutions</BannerText>
+          </BannerOverlay>
+        </Banner>
 
-                {/* 🔹 Intro */}
-                <Intro>
-                    {/* <IntroImage src={introImage} alt="Intro" /> */}
-                    <IntroText>
-                        "024 Car Racing Academy is a cutting-edge web platform designed to promote racing education, registrations, and event management. The site offers users seamless access to training schedules, driver profiles, and race-day insights."
-                    </IntroText>
-                </Intro>
+        {/* 🔹 Intro */}
+        <Intro>
+          <IntroText>
+            "Plan your journey with ease — through intelligent booking, real-time tracking, and reliable transport services."
+          </IntroText>
+        </Intro>
+        <Description>
+          {"    "} A streamlined transport booking system built to simplify travel management for individuals and businesses. The platform offers end-to-end solutions for booking, scheduling, and managing transport operations with real-time updates and digital convenience.
+          Whether it's daily commuting, intercity travel, or logistics coordination, the system adapts to meet varied needs — from passengers to fleet managers. Key features include route optimization, fare calculation, secure payments, and live tracking.
+          Designed for efficiency and transparency, the platform ensures smoother operations, enhanced user experience, and better resource utilization in the evolving landscape of mobility and transport services.
+        </Description>
 
-                {/* 🔹 Description */}
-                <Description>
-                   024 Car Racing Academy is a full-stack web application tailored for aspiring racers and motorsport enthusiasts. The platform provides detailed training modules, digital race registrations, and real-time event tracking. It’s equipped with an intuitive admin dashboard, responsive design for mobile accessibility, and an integrated media gallery for showcasing race highlights and student achievements. Built using React for the frontend and Node.js backend, it ensures fast performance, dynamic content rendering, and secure data handling.
-                </Description>
 
-                {/* 🔹 Screenshots */}
-                <Screenshots>
-                    <ScreenshotsTitle>Project Screenshots</ScreenshotsTitle>
-                    <ScreenshotGrid>
-                        <ScreenshotCard>
-                            <ScreenshotImg src={ss1} alt="Login Page" />
-                        </ScreenshotCard>
-                        <ScreenshotCard>
-                            <ScreenshotImg src={ss2} alt="Login Page" />
-                        </ScreenshotCard>
-                        <ScreenshotCard>
-                            <ScreenshotImg src={ss3} alt="Login Page" />
-                        </ScreenshotCard>
-                        <ScreenshotCard>
-                            <ScreenshotImg src={ss4} alt="Dashboard" />
-                        </ScreenshotCard>
-                    </ScreenshotGrid>
-                </Screenshots>
-                <Footer />
-            </Container>
-        </>
-    );
+        {/* 🔹 Screenshots */}
+        <Screenshots>
+          <ScreenshotsTitle>Project Screenshots</ScreenshotsTitle>
+          <ScreenshotGrid>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss1} alt="Login Page" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss2} alt="Login Page" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss3} alt="Login Page" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss4} alt="Dashboard" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss5} alt="Dashboard" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss6} alt="Dashboard" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss7} alt="Dashboard" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss8} alt="Dashboard" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss9} alt="Dashboard" />
+            </ScreenshotCard>
+            <ScreenshotCard>
+              <ScreenshotImg src={ss10} alt="Dashboard" />
+            </ScreenshotCard>
+          </ScreenshotGrid>
+        </Screenshots>
+      </Container>
+    </>
+  );
 };
 
 export default ProjectDetails;

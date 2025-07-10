@@ -7,7 +7,6 @@ import ss3 from "../assets/Hotel/Screenshot-3.jpg";
 import ss4 from "../assets/Hotel/Screenshot-4.jpg";
 import ss5 from "../assets/Hotel/Screenshot-5.jpg";
 import ss6 from "../assets/Hotel/Screenshot-6.jpg";
-import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
 const Container = styled.div``;
@@ -39,24 +38,6 @@ const BannerText = styled.h1`
   font-weight: bold;
   z-index: 2;
   position: relative;
-`;
-
-const Botton = styled.h1`
-  top:9rem;
- padding: 0.7rem 1.5rem;
-  background-color: #ff5252;
-  color: white;
-   margin-top: 1rem;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 25px;
-  display: inline-block;
-  position: relative;
-  a{
-  color:white;
-  text-decoration:none;
-  }
 `;
 
 // 🔹 2. Intro Section
@@ -132,7 +113,6 @@ const ProjectDetails: React.FC = () => {
                 <Banner>
                     <BannerOverlay>
                         <BannerText>Hotel Management System</BannerText>
-                        <Botton> <a href="#" target="_blank">See Site</a></Botton>
                     </BannerOverlay>
                 </Banner>
 
@@ -173,7 +153,6 @@ const ProjectDetails: React.FC = () => {
                         </ScreenshotCard>
                     </ScreenshotGrid>
                 </Screenshots>
-                <Footer />
             </Container>
         </>
     );

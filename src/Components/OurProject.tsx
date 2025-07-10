@@ -1,12 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import hotel from "../assets/Hotel_management.jpg";
-import maac from "../assets/Maac.jpg";
-import ztf from "../assets/024.jpg";
-import rng from "../assets/RNG_ALPHA.jpg";
-import hive from "../assets/Hive.jpg";
-import exam from "../assets/Exam_portal.jpg";
-import esara from '../assets/Esara.jpg'
+import EduCon from '../assets/Abord_consultancy.jpg'
+import Ecom from '../assets/E-Com.jpg'
+import Elearn from '../assets/E-Learn.jpg'
+import Boking from '../assets/Transport_booking.jpg'
 
 const Section = styled.section`
   padding: 4rem 2rem;
@@ -69,12 +67,6 @@ const Overlay = styled.div`
   z-index: 2;
 `;
 
-const ProjectTitle = styled.div`
-  color: white;
-  font-size: 1.1rem;
-  font-weight: bold;
-`;
-
 const Category = styled.div`
   position: absolute;
   top: 10px;
@@ -113,52 +105,33 @@ const cardWidth = 380;
 const projectData = [
   {
     id: 1,
-    title: "Hotel Management",
     image: hotel,
-    category: "Web App",
+    category: "Booking & Reservation System",
     link: "/project/hotel",
   },
   {
     id: 2,
-    title: "Hive",
-    image: hive,
+    image: EduCon,
     category: "Education Consultancy",
     link: "/project/hive",
   },
   {
     id: 3,
-    title: "ZTF FinTech",
-    image: ztf,
-    category: "Racing Academy",
+    image: Boking,
+    category: "Transportation & Mobility",
     link: "/project/ztf",
   },
   {
     id: 4,
-    title: "MAAC Portal",
-    image: maac,
-    category: "Gaming Academy",
+    image: Ecom,
+    category: "ECommerce",
     link: "/project/maac",
   },
   {
     id: 5,
-    title: "RNG Alpha",
-    image: rng,
-    category: "Mechanical Engg",
+    image: Elearn,
+    category: "E-Learning Site",
     link: "/project/rng",
-  },
-  {
-    id: 6,
-    title: "Hive Exam Portal",
-    image: exam,
-    category: "Exam Portal",
-    link: "/project/exam",
-  },
-  {
-    id: 7,
-    title: "Student Fee Management",
-    image: esara,
-    category: "Esara",
-    link: "/project/esara",
   },
 ];
 
@@ -242,9 +215,8 @@ const OurProjects: React.FC = () => {
               target="_self" // change to "_blank" if you want to open in new tab
             >
               <Category>{project.category}</Category>
-              <ProjectImage src={project.image} alt={project.title} />
+              <ProjectImage src={project.image} alt={project.category} />
               <Overlay>
-                <ProjectTitle>{project.title}</ProjectTitle>
               </Overlay>
             </Card>
           ))}
